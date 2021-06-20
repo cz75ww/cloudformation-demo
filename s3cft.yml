@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
-  FosouzaS3Bucket:
+  FpsouzaS3Bucket:
     Type: AWS::S3::Bucket
 Outputs:
   BucketName:
