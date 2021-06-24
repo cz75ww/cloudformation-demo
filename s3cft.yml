@@ -2,7 +2,4 @@ AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   FpsouzaS3Buckettest1:
     Type: AWS::S3::Bucket
-Outputs:
-  BucketName:
-    Value: !Ref FpsouzaS3Buckettest1
-    Description: Name of the sample Amazon S3 bucket.
+
