@@ -1,5 +1,16 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
-  FpsouzaS3Buckettest1:
+  S3Bucket:
     Type: AWS::S3::Bucket
+  AlertSNSTopic:
+        Type: 'AWS::SNS::Topic'
+        Properties:
+            Subscription:
+                - 
+                    Endpoint: 'fabiano.prospero@gmail.com'
+                    Protocol: email
+Outputs:
+  BucketName:
+    Value: !Ref 'S3Bucket'
+    Description: Name of the sample Amazon S3 bucket.
 
